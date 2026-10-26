@@ -1,0 +1,21 @@
+{
+  "platform": "Clay.com HTTP API Enrichment Column",
+  "actorTitle": "Greenhouse & Lever Company Job Board & Hiring Signal Scraper",
+  "actorStoreUrl": "https://apify.com/lucacelli/ats-job-board-hiring-signal-scraper",
+  "costComparison": "$0.0005 per job ($0.50/1k) vs. $0.10–$0.50 per row in native Clay credits (98% savings)",
+  "httpApiConfiguration": {
+    "method": "POST",
+    "endpoint": "https://api.apify.com/v2/acts/lucacelli~ats-job-board-hiring-signal-scraper/run-sync-get-dataset-items?token=YOUR_APIFY_TOKEN",
+    "headers": {
+      "Content-Type": "application/json"
+    },
+    "bodyTemplate": {
+      "companySlugs": [
+        "stripe",
+        "figma",
+        "anthropic"
+      ],
+      "atsPlatform": "auto"
+    }
+  }
+}
